@@ -1,0 +1,126 @@
+
+@import url('http://fonts.cdnfonts.com/css/vimland');
+@import url('http://fonts.cdnfonts.com/css/myriad-pro');
+
+h1{
+    font-size:72px;
+    font-family: 'Vimland', sans-serif;
+}
+
+h3{
+    font-size:56px;
+    font-family: 'Vimland', sans-serif;
+}
+
+h4{
+    font-size:32px;
+    font-family: 'Vimland', sans-serif;
+}
+
+body{
+    background-color: #12141d;
+    color: #fefefe;
+}
+
+p{
+    font-size: 24px;
+    font-family: 'Myriad Pro', sans-serif;
+    text-align: center;
+}
+
+.logo{
+    width: auto;
+    height: 100px;
+}
+
+.intro{
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.step-section{
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.bg-dark{
+    background-color: #000 !important;
+}
+
+.dead-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top:32px;
+    padding: 24px;
+    border: 2px solid;
+    border-color: #eee;
+    border-radius: 24px;
+}
+
+.download-button{
+    margin-top: 16px;
+    padding: 16px 32px;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fefefe;
+    border-radius: 100px;
+    color: #fefefe;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.download-button:hover{
+    color: #ccc;
+}
+
+.badge{
+    background-image: url('./assets/images/Gradient-Blur-001.jpeg');
+    margin:24px;
+    width: 64px;
+    height: 64px;
+    line-height: 44px;
+    border-radius: 50%;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    border: 2px solid #eee;
+}
+
+.dead-input{
+    margin:24px;
+    font-size: 24px;
+    padding:16px 32px;
+    color: #fefefe;
+    background: #0d0e15;
+    border: 2px solid #eee;
+    border-radius: 100px;
+}
+
+.character{
+    margin: 16px;
+
+    max-width: auto;
+    height: 196px;
+}
+
+footer{
+    margin-top: 124px;
+    margin-bottom: 40px;
+}

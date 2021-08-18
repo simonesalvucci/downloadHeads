@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=“UTF-8”>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Download Heads</title>
+        <script>
+            function validateForm() {
+                let x = document.getElementById('serial-input').value;
+                let lenght = document.getElementById('serial-input').value.lenght;
+                var serial = parseInt(x, 10)
+                if (serial == '') {
+                    alert("You must enter a serial number");
+                    return false;
+                    }
+                if (serial > 10000){
+                    alert("Your serial number does not exist");
+                    return false;
+                    }
+                if (serial == 0){
+                alert("Your serial number does not exist");
+                return false;
+                }
+                }
+        </script>
+    </head>
+    <body>
+
+        <!-- Page Content -->
+        <div class='container'>
+            <div class="row">
+                <div class='col'>
+                    <div class="intro">
+                        <img class='logo' src="./assets/images/logo.png">
+                        <h1 class="mt-4">Download your DHs 3D files</h1>
+                        <p>A simple way to download your favourite DeadHeads 3D files.
+                            </br>Files will be download in their native .fbx format
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='container'>
+            <div class="row">
+                <div class='col step-section'>
+                    <div class='badge'>1</div>
+                    <h3>Enter your serial number</h3>
+                    <p>Enter your DeadHead serial number here and use the buttons below to download your .fbx files</p>
+                    <input id='serial-input' class="dead-input" placeholder="Enter your Serial No." oninput="validateForm()"/>
+                </div>
+            </div>
+        </div>
+
+        <div class='container'>
+            <div class="row">
+                <div class='col step-section'>
+                    <div class='badge'>2</div>
+                    <h3>Download your character</h3>
+                    <p>Choose the version you want to download</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class='container'>
+            <div class="row">
+                <div class='col'>
+                    <div class="dead-card">
+                        <h4>Character</h4>
+                        <img class='character' src='./assets/images/char.png'>
+                        <a  class='download-button'
+                            href="#" 
+                            onclick="validateForm(); this.href='https://deadheads-3d-files.s3.us-west-2.amazonaws.com/fbx-hq-dh-only/'+ document.getElementById('serial-input').value + '.fbx';">
+                            Download
+                        </a>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="dead-card">
+                        <h4>Character + Tombstone</h4>
+                        <img class='character' src='./assets/images/chartomb.png'>
+                        <a  class='download-button'
+                            href="#" 
+                            onclick="validateForm(); this.href='https://deadheads-3d-files.s3.us-west-2.amazonaws.com/fbx-hq-full/'+ document.getElementById('serial-input').value + '.fbx';">
+                            Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p>
+            Made with  <span>&#x2764</span>  by <a style='color: #fefefe;' href="https://discord.com/users/436907963979137036">Broken</a>
+        </br>Send love here:
+    </br>0xD2804C9455C651a0065FF66668bb058f94f0EbA7
+        </p>
+    </footer>
+</html>
