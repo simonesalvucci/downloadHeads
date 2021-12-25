@@ -5,16 +5,19 @@
 h1{
     font-size:72px;
     font-family: 'Vimland', sans-serif;
+    text-align: center;
 }
 
 h3{
     font-size:56px;
     font-family: 'Vimland', sans-serif;
+    text-align: center;
 }
 
 h4{
     font-size:32px;
     font-family: 'Vimland', sans-serif;
+    text-align: center;
 }
 
 body{
